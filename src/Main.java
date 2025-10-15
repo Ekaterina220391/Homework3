@@ -11,21 +11,23 @@ public class Main {
         }
 
         System.out.println("Задача 2");
-        int temp = 3;
+        int temp = 7;
         if (temp < 5) {
             System.out.println("На улице " + temp + " градусов " + "нужно надеть шапку ");
         }
-        if (temp > 5) {
+        else  {
             System.out.println("На улице " + temp + " градусов " + " можно идти без шапки");
         }
 
         System.out.println("Задача 3");
         int speed = 70;
-        if (speed > 60) {
-            System.out.println("Если скорость " + speed + " придется заплатить штраф ");
+        if (speed < 60  ) {
+            System.out.println("Если скорость "  + speed + " можно ездить спокойно");}
+        else if  (speed == 60){
+            System.out.println("Если скорость " + speed + " можно ездить спокойно ");
         }
-        if (speed < 60) {
-            System.out.println("Если скорость" + speed + " можно ездить спокойно");
+        else {
+            System.out.println("Если скорость" + speed + " придется заплатить штраф");
         }
 
         System.out.println("Задача 4");
@@ -33,7 +35,7 @@ public class Main {
         if (agepeople > 2 && agepeople < 6) {
             System.out.println("Если возраст человека равен " + agepeople + " то ему нужно ходить в детский сад");
         }
-        if (agepeople > 7 && agepeople < 17) {
+        if (agepeople > 6 && agepeople < 17) {
             System.out.println("Если возраст человека равен " + agepeople + " то ему нужно ходить в школу");
         }
         if (agepeople >= 18 && agepeople <= 24) {
@@ -44,11 +46,11 @@ public class Main {
         }
 
         System.out.println("Задача 5");
-        int agechild = 4;
+        int agechild = 5;
         if (agechild < 5) {
             System.out.println("Если возраст ребенка равен " + agechild + " то он не может кататься на аттракционе ");
         }
-        if (agechild > 5 && agechild < 14) {
+        if (agechild > 4 && agechild < 15) {
             System.out.println("Если возраст ребенка равен " + agechild + " то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя. ");
         }
         if (agechild > 14) {
